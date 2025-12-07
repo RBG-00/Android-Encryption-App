@@ -1,0 +1,139 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    android:id="@+id/rootScroll"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#F8F8FF">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:padding="24dp"
+        android:gravity="center_horizontal">
+
+        <Spinner
+            android:id="@+id/algorithmSpinner"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:backgroundTint="#8B5CF6"
+            android:layout_marginBottom="16dp" />
+
+        <EditText
+            android:id="@+id/inputText"
+            android:layout_width="match_parent"
+            android:layout_height="150dp"
+            android:hint="🔐 Enter text to encode or decode"
+            android:textColor="#000000"
+            android:textColorHint="#666666"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:gravity="top|start"
+            android:inputType="textMultiLine|textVisiblePassword"
+            android:scrollHorizontally="true"
+            android:overScrollMode="always" />
+
+        <EditText
+            android:id="@+id/keyInput"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:hint="🔑 Enter Vigenère key"
+            android:textColor="#000000"
+            android:textColorHint="#888888"
+            android:background="#FFFFFF"
+            android:padding="12dp"
+            android:layout_marginBottom="12dp"
+            android:visibility="gone" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:gravity="center"
+            android:layout_marginBottom="16dp">
+
+            <Button
+                android:id="@+id/encodeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Encode 🔐"
+                android:backgroundTint="#10B981"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/clearButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:layout_marginHorizontal="8dp"
+                android:text="Clear ✖"
+                android:backgroundTint="#9CA3AF"
+                android:textColor="#FFFFFF" />
+
+            <Button
+                android:id="@+id/decodeButton"
+                android:layout_width="0dp"
+                android:layout_height="wrap_content"
+                android:layout_weight="1"
+                android:text="Decode 🔓"
+                android:backgroundTint="#3B82F6"
+                android:textColor="#FFFFFF" />
+        </LinearLayout>
+
+        <Button
+            android:id="@+id/getOutputButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Show Result"
+            android:backgroundTint="#EAB308"
+            android:textColor="#000000"
+            android:textStyle="bold"
+            android:layout_marginBottom="16dp" />
+
+        <TextView
+            android:id="@+id/outputText"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:text=""
+            android:padding="12dp"
+            android:textSize="16sp"
+            android:textColor="#000000"
+            android:gravity="start"
+            android:scrollbars="vertical"
+            android:maxLines="5"
+            android:ellipsize="end"
+        />
+
+
+        <Button
+            android:id="@+id/copyOutputButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Copy Output 📋"
+            android:backgroundTint="#6366F1"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="12dp"
+            android:visibility="gone" />
+
+
+        <Button
+            android:id="@+id/themeButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Switch Theme 🎨"
+            android:backgroundTint="#A78BFA"
+            android:textColor="#FFFFFF"
+            android:layout_marginTop="16dp" />
+
+        <Button
+            android:id="@+id/openHistoryButton"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="16dp"
+            android:backgroundTint="#22C55E"
+            android:text="Operation History 📜"
+            android:textColor="#FFFFFF" />
+    </LinearLayout>
+</ScrollView>
