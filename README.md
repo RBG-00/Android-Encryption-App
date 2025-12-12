@@ -22,13 +22,14 @@ A multi-algorithm Android application for text **encryption** and **decryption**
 ## 📸 Screenshots
 
 ### 🔐 Encryption Example
-<img src="Screenshots/Encode.png" width="280"/>
+![Encryption Example](./ScreenShots/Encode.png)
 
 ### 🔓 Decryption Example
-<img src="Screenshots/Decode.png" width="280"/>
+![Decryption Example](./ScreenShots/Decode.png)
 
 ### 📜 Operation History
-<img src="Screenshots/History.png" width="280"/>
+![Operation History](./ScreenShots/History.png)
+
 
 ---
 
